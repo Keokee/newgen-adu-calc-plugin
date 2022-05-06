@@ -3,7 +3,7 @@
 ** Plugin Name: ADU Calculator Shortcode
 ** Author: Keokee
 ** Author URI: http://keokee.com
-** Version: 1.0
+** Version: 1.1
 ** Description: A shortcode to display the ADU calculator
 ** 
 */

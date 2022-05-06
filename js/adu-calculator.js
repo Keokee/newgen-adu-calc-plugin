@@ -90,9 +90,11 @@ const aduCalc = () => {
     slider.dataset.key = selection;
   }
 
-  const inputSelector = aduCalculator.querySelectorAll('.calc-selector');
-  inputSelector.forEach(selector => {
+  const calculatorSelector = aduCalculator.querySelectorAll('.calc-selector');
+  calculatorSelector.forEach(selector => {
     selector.addEventListener('click', e => {
+      calculatorSelector.forEach( element => element.classList.contains('active') ? element.classList.remove('active') : null )
+      e.target.classList.add('active');
       changeCalculator(selector.dataset.key);
       calculateEstimate();
     });
