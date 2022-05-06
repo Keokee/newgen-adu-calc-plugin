@@ -37,7 +37,7 @@ function add_calculator_shortcode() {
   <div id="adu-calculator">
 
     <div class="calc-selectors">
-      <div class="calc-selector" data-key="attached">Attached ADU</div>
+      <div class="calc-selector active" data-key="attached">Attached ADU</div>
       <div class="calc-selector" data-key="detached">Detached ADU</div>
       <div class="calc-selector" data-key="garage">Garage ADU</div>
     </div>
