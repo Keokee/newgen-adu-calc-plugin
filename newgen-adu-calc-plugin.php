@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 // Register shortcode JS
 function adu_calc_shortcode_js() {
-  wp_register_script('adu-calculator-script', plugins_url('/js/adu-calculator.js', __FILE__), [], '1.0'.filemtime( plugins_url('/js/adu-calculator.js', __FILE__) ), true);
+  wp_register_script('adu-calculator-script', plugins_url('js/adu-calculator.js', __FILE__), [], '1.0'.filemtime( plugins_dir_path(__FILE__).'js/adu-calculator.js' ), true);
 }
 add_action('wp_enqueue_scripts', 'adu_calc_shortcode_js');
 
