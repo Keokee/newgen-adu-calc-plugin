@@ -3,7 +3,7 @@
 ** Plugin Name: ADU Calculator Shortcode
 ** Author: Keokee
 ** Author URI: http://keokee.com
-** Version: 1.1
+** Version: 1.2
 ** Description: A shortcode to display the ADU calculator
 ** 
 */
@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 // Register shortcode JS
 function adu_calc_shortcode_js() {
-  wp_register_script('adu-calculator-script', plugins_url('/js/adu-calculator.js', __FILE__), [], '1.0', true);
+  wp_register_script('adu-calculator-script', plugins_url('/js/adu-calculator.js', __FILE__), [], '1.0'.filemtime( plugins_url('/js/adu-calculator.js', __FILE__) ), true);
 }
 add_action('wp_enqueue_scripts', 'adu_calc_shortcode_js');
 
